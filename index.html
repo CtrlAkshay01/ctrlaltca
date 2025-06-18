@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CtrlAltCA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 0;
+      background-color: #0d0d0d;
+      border-bottom: 2px solid #222;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin: 20px 0;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    nav a {
+      color: #bbbbbb;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+      padding-bottom: 5px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #ffffff;
+      transition: width .3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+      font-weight: 600;
+      color: #f1f1f1;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      color: #888;
+      font-size: 0.9em;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CtrlAltCA</div>
+  </header>
+  <nav>
+    <a href="#">Products</a>
+    <a href="#">Knowledge Dump</a>
+    <a href="#">Articles</a>
+    <a href="#">Why Us?</a>
+  </nav>
+  <section class="hero">
+    <h1>Take control of your money.</h1>
+  </section>
+  <footer>
+    &copy; 2025 CtrlAltCA. Built with brutal honesty.
+  </footer>
+</body>
+</html>
